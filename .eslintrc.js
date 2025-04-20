@@ -22,5 +22,6 @@ module.exports = {
     "no-var": 2,
     "arrow-spacing": [2, { before: true, after: true }], //箭头函数前后空格
     "@typescript-eslint/no-non-null-assertion": "off", //非空断言
+    "react/react-in-jsx-scope": "off",
   },
 };

@@ -14,7 +14,7 @@ export default defineConfig({
   },
   server: {
     host: true,
-    port: 8888,
+    port: 3000,
     proxy: {
       "/api": {
         // target: 'http://101.37.18.23:3000/', // 线上
