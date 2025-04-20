@@ -9,19 +9,24 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    "allowImportingTsExtensions": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "typeRoots": ["node_modules/@types"],
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {
+      "@/*": ["*"],
       "@pages/*": ["pages/*"],
       "@components/*": ["components/*"],
       "@stores/*": ["stores/*"],
       "@services/*": ["services/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@routers/*": ["routers/*"],
+      "@hooks/*": ["hooks/*"]
     }
   },
   "include": ["src"]
