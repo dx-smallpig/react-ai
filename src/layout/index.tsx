@@ -10,10 +10,12 @@ function PCLayout() {
         <div className="border m-8 rounded-[0.1rem] border-[#e2e8f0]">
           <SideBar />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col px-16">
           <PageHeader />
+          <div className="flex-1">
+            <Outlet />
+          </div>
         </div>
-        <Outlet />
       </div>
     </>
   );

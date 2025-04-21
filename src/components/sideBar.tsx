@@ -42,7 +42,7 @@ export default function SideBar() {
         return (
           <div key={item.belongs} className="p-8 flex flex-col gap-[0.04rem]">
             {sideOpen && (
-              <div className="h-[0.32rem] px-[0.08rem] text-[0.16rem] flex items-center text-[#020618b3]">
+              <div className="h-[0.32rem] px-[0.08rem] text-[0.16rem] flex items-center text-[#020618b3] ml-[0.08rem]">
                 {item.belongs}
               </div>
             )}

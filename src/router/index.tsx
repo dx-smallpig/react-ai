@@ -1,8 +1,9 @@
-import { title } from "process";
 import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 const LayoutPage = lazy(() => import("@/layout/index"));
+const Chat = lazy(() => import("@pages/chat"));
+const Dataset = lazy(() => import("@pages/dataset"));
 
 export const routes = [
   {
@@ -11,7 +12,7 @@ export const routes = [
     children: [
       {
         path: "/chat",
-        element: <div>home</div>,
+        element: <Chat />,
         handle: {
           title: "聊天",
           icon: "icon-liaotianjilu",
@@ -20,7 +21,7 @@ export const routes = [
       },
       {
         path: "/dataset",
-        element: <div>about</div>,
+        element: <Dataset />,
         handle: {
           title: "知识库",
           icon: "icon-shuju",
