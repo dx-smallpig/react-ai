@@ -7,7 +7,7 @@ function PCLayout() {
   return (
     <>
       <div className="flex h-full">
-        <div className="border m-8 rounded-[0.1rem] border-[#e2e8f0]">
+        <div className="border m-8 rounded-[0.1rem] border-[#e2e8f0] bg-[#ffffff96]">
           <SideBar />
         </div>
         <div className="flex-1 flex flex-col px-16">
